@@ -1,7 +1,5 @@
 package org.example;
 
-import java.util.List;
-
 public final class CurrentUserAccessor {
     private User user;
 
