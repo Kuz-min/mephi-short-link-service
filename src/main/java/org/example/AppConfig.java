@@ -26,7 +26,7 @@ public final class AppConfig {
         }
     }
 
-    public static AppConfig Load(String resourceName) {
+    public static AppConfig load(String resourceName) {
         var properties = new Properties();
         try (var input = AppConfig.class.getClassLoader().getResourceAsStream(resourceName)) {
             if (input != null) {

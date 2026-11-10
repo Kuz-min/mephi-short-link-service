@@ -24,7 +24,7 @@ final class ConsoleApp {
     ) {
     }
 
-    private final AppConfig appConfig = AppConfig.Load("application.properties");
+    private final AppConfig appConfig = AppConfig.load("application.properties");
     private final Scanner scanner = new Scanner(System.in);
     private final UserService userService = new UserService();
     private final CurrentUserAccessor currentUser = new CurrentUserAccessor();
